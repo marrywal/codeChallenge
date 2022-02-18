@@ -1,0 +1,37 @@
+.overview {
+    width: clamp(400px, 60vw, 800px);
+    margin: auto;
+
+    .gutter-row {
+        > div {
+            transition-duration: 0.2s;
+            background-color: #dee1dd;
+            border: 1px solid #c4cdc1;
+            border-radius: 6px;
+            padding: 30px 30px 15px;
+            margin-top: 15px;
+            text-align: center;
+
+            i {
+                transition-duration: 0.2s;
+                font-size: 46px;
+                color: #6d9197;
+            }
+
+            p {
+                margin-top: 4px;
+                color: #28363d;
+                font-size: 15px;
+                letter-spacing: 0.6px;
+            }
+        }
+        &:hover > div {
+            background-color: #c4cdc1;
+            border-color: #c4cdc1;
+
+            i {
+                color: #658b6f;
+            }
+        }
+    }
+}

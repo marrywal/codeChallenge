@@ -6,6 +6,7 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzSpaceModule } from 'ng-zorro-antd/space';
+import { NzGridModule } from 'ng-zorro-antd/grid';
 
 
 
@@ -16,7 +17,8 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
     NzInputModule,
     NzInputNumberModule,
     NzDatePickerModule,
-    NzSpaceModule
+    NzSpaceModule,
+    NzGridModule
   ],
 })
 export class NgZorroModule { }
