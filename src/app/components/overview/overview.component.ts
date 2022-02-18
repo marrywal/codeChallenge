@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OverviewComponent implements OnInit {
 
+  itemList = [
+    {
+      name: 'Timer / Countdown',
+      icon: 'field-time',
+      link: '/countdown'
+    },
+    {
+      name: 'Cheap, good, fast',
+      icon: 'deployment-unit',
+      link: '/countdown'
+    },
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
 
 }
