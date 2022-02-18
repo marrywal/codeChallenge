@@ -15,8 +15,8 @@ export class OverviewComponent implements OnInit {
     },
     {
       name: 'Cheap, good, fast',
-      icon: 'deployment-unit',
-      link: '/countdown'
+      icon: 'control',
+      link: '/choose-two'
     },
   ];
 

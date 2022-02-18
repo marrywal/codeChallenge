@@ -12,7 +12,8 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgZorroModule } from './ng-zorro.module';
+import { NgZorroModule } from './app-ng-zorro.module';
+import { ChooseTwoComponent } from './components/choose-two/choose-two.component';
 
 
 registerLocaleData(en);
@@ -21,7 +22,8 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     OverviewComponent,
-    CountdownComponent
+    CountdownComponent,
+    ChooseTwoComponent
   ],
   imports: [
     BrowserModule,
