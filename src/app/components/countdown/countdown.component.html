@@ -1,0 +1,88 @@
+<div class="timerBox">
+    <h2 nz-typography>
+        <i nz-icon nzType="field-time" nzTheme="outline"></i>
+        Timer
+    </h2>
+
+    <nz-space nzSize="small" *ngIf="!timerCounter" class="inputBox">
+        <nz-input-number *nzSpaceItem [(ngModel)]="timerInput" [nzMin]="0" [nzStep]="1"></nz-input-number>
+        <button *nzSpaceItem nz-button nzType="primary" (click)="startTimer()" nzSearch>
+            <i nz-icon nzType="caret-right" nzTheme="fill"></i>
+            Start
+        </button>
+    </nz-space>
+
+    <div class="box" *ngIf="timerCounter">
+        <div class="countdown">
+            <div class="number">
+                {{ timerCounter }}
+            </div>
+            <div class="text">
+                Seconds
+            </div>
+        </div>
+        <div class="countdown stopper">
+            <button nz-button nzType="primary" nzSize="small" (click)="stopTimer()">
+                <i nz-icon nzType="close" nzTheme="outline"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="countdownBox">
+    <h2 nz-typography>
+        <i nz-icon nzType="clock-circle" nzTheme="outline"></i>
+        Countdown
+    </h2>
+
+    <nz-space nzSize="small" class="inputBox"
+    *ngIf="!countdownLeft.days && !countdownLeft.hours 
+    && !countdownLeft.minutes && !countdownLeft.seconds">
+        <nz-date-picker *nzSpaceItem [(ngModel)]="countdownInput"></nz-date-picker>
+        <button *nzSpaceItem nz-button nzType="primary" (click)="startCountdown()">
+            <i nz-icon nzType="caret-right" nzTheme="fill"></i>
+            Start
+        </button>
+    </nz-space>
+
+    <div class="box" *ngIf="countdownLeft.days && countdownLeft.hours 
+    && countdownLeft.minutes && countdownLeft.seconds">
+        <div class="countdown days">
+            <div class="number">
+                {{ countdownLeft.days }}
+            </div>
+            <div class="text">
+                Days
+            </div>
+        </div>
+        <div class="countdown hours">
+            <div class="number">
+                {{ countdownLeft.hours }}
+            </div>
+            <div class="text">
+                Hours
+            </div>
+        </div>
+        <div class="countdown minutes">
+            <div class="number">
+                {{ countdownLeft.minutes }}
+            </div>
+            <div class="text">
+                Minutes
+            </div>
+        </div>
+        <div class="countdown seconds">
+            <div class="number">
+                {{ countdownLeft.seconds }}
+            </div>
+            <div class="text">
+                Seconds
+            </div>
+        </div>
+        <div class="countdown stopper">
+            <button nz-button nzType="primary" nzSize="small" (click)="stopCountdown()">
+                <i nz-icon nzType="close" nzTheme="outline"></i>
+            </button>
+        </div>
+    </div>
+</div>
