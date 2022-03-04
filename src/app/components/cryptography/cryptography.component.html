@@ -1,0 +1,47 @@
+<div class="containerBox">
+    <nz-divider nzText="Encode text"></nz-divider>
+
+    <nz-input-group [nzSuffix]="textAreaClearTplo" class="ant-input-affix-wrapper-textarea-with-clear-btn textbox">
+        <textarea nz-input [(ngModel)]="textToEncode" placeholder="Write text here"></textarea>
+    </nz-input-group>
+    <ng-template #textAreaClearTplo>
+        <i nz-icon class="ant-input-clear-icon" nzTheme="fill" nzType="close-circle" *ngIf="textToEncode"
+            (click)="textToEncode = ''"></i>
+    </ng-template>
+
+    <button nz-button nzType="primary" nzSize="small" (click)="encodeText()" [disabled]="textToEncode === ''">
+        <i nz-icon nzType="right-square" nzTheme="outline"></i>
+        Encode
+    </button>
+
+    <button nz-button nzType="primary" nzSize="small" [cdkCopyToClipboard]="encodedText" 
+    (click)="createMessage()" [disabled]="encodedText === ''">
+        <i nz-icon nzType="copy" nzTheme="outline"></i>
+        Copy
+    </button>
+
+    <p class="outputField" *ngIf="encodedText">{{encodedText}}</p>
+
+    <nz-divider nzText="Decode text"></nz-divider>
+
+    <nz-input-group [nzSuffix]="textAreaClearTplt" class="ant-input-affix-wrapper-textarea-with-clear-btn textbox">
+        <textarea nz-input [(ngModel)]="textToDedode" placeholder="Write text here"></textarea>
+    </nz-input-group>
+    <ng-template #textAreaClearTplt>
+        <i nz-icon class="ant-input-clear-icon" nzTheme="fill" nzType="close-circle" *ngIf="textToDedode"
+            (click)="textToDedode = ''"></i>
+    </ng-template>
+
+    <button nz-button nzType="primary" nzSize="small" (click)="decodeText()" [disabled]="textToDedode === ''">
+        <i nz-icon nzType="left-square" nzTheme="outline"></i>
+        Decode
+    </button>
+    
+    <button nz-button nzType="primary" nzSize="small" [cdkCopyToClipboard]="decodedText" 
+    (click)="createMessage()" [disabled]="decodedText === ''">
+        <i nz-icon nzType="copy" nzTheme="outline"></i>
+        Copy
+    </button>
+
+    <p class="outputField" *ngIf="decodedText">{{decodedText}}</p>
+</div>

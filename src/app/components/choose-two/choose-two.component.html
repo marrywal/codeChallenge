@@ -1,0 +1,13 @@
+<div class="cardBox">
+    <nz-card [nzBordered]="false" [nzTitle]="avatarTemplate">
+        <div class="chooseTwo">
+            <div *ngFor="let state of states">
+                <nz-switch [(ngModel)]="state.value" (click)="toggleSwitch(state)" nzSize="small"></nz-switch>
+                <span>{{state.key}}</span>
+            </div>
+        </div>
+    </nz-card>
+    <ng-template #avatarTemplate>
+        <i nz-icon nzType="control" nzTheme="outline"></i> Choose two:
+    </ng-template>
+</div>

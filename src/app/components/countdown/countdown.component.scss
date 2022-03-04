@@ -1,0 +1,39 @@
+.timerBox,
+.countdownBox {
+    border: 1px solid rgb(187, 187, 187);
+    background-color: rgb(228, 230, 230);
+    margin: 20px 0;
+    padding: 20px 30px;
+
+    .box {
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inputBox {
+        height: 85px;
+    }
+
+    .ant-input-number {
+        width: 145px;
+    }
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+
+    .number {
+        font-size: 54px;
+        font-weight: bold;
+        color: #50aed3;
+    }
+
+    .text {
+        padding-left: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+}

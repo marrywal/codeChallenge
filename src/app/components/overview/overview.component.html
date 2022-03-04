@@ -1,0 +1,11 @@
+<div class="overview">
+    <div nz-row [nzGutter]="15">
+        <a *ngFor="let item of itemList" [ngClass]="{disabled : !item.link}" routerLink="{{item.link}}" nz-col [nzSpan]="6" class="gutter-row" nzXs="24"
+            nzSm="12" nzMd="8" nzLg="6">
+            <div>
+                <i nz-icon nzType="{{ item.icon }}" nzTheme="outline"></i>
+                <p>{{ item.name }}</p>
+            </div>
+        </a>
+    </div>
+</div>
