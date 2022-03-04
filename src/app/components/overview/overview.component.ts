@@ -33,6 +33,41 @@ export class OverviewComponent implements OnInit {
       icon: 'calculator',
       link: ''
     },
+    {
+      name: 'Chat',
+      icon: 'comment',
+      link: ''
+    },
+    {
+      name: 'Image slider',
+      icon: 'picture',
+      link: ''
+    },
+    {
+      name: 'Random color background',
+      icon: 'select',
+      link: ''
+    },
+    {
+      name: 'Loading progress',
+      icon: 'loading-3-quarters',
+      link: ''
+    },
+    {
+      name: 'Money exchange calculator',
+      icon: 'transaction',
+      link: ''
+    },
+    {
+      name: 'Contact form',
+      icon: 'question',
+      link: ''
+    },
+    {
+      name: 'Drink more water',
+      icon: 'question',
+      link: ''
+    },
   ];
 
   constructor() { }
