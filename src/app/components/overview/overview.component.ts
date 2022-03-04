@@ -18,6 +18,11 @@ export class OverviewComponent implements OnInit {
       icon: 'control',
       link: '/choose-two'
     },
+    {
+      name: 'Cryptography',
+      icon: 'container',
+      link: '/crypto'
+    },
   ];
 
   constructor() { }

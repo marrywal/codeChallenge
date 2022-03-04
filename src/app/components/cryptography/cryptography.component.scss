@@ -1,0 +1,32 @@
+.cryptobox {
+    width: clamp(400px, 60vw, 600px);
+    height: auto;
+    margin: 20px auto;
+    padding: 20px 30px;
+    box-sizing: border-box;
+
+    .textbox {
+        margin-bottom: 15px;
+
+        textarea {
+            min-height: 120px;
+        }
+    }
+
+    .ant-input {
+        padding-right: 18px;
+    }
+
+    p {
+        margin: 15px 0 30px;
+        width: auto;
+        word-break: break-all;
+        background-color: aliceblue;
+        border: 1px solid rgb(218, 237, 255);
+        padding: 5px 10px;
+    }
+
+    button {
+        margin-right: 10px;
+    }
+}

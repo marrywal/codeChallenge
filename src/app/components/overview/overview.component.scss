@@ -3,13 +3,13 @@
     margin: auto;
 
     .gutter-row {
+            margin-top: 15px;
         > div {
             transition-duration: 0.2s;
             background-color: #dee1dd;
             border: 1px solid #c4cdc1;
             border-radius: 6px;
             padding: 30px 30px 15px;
-            margin-top: 15px;
             text-align: center;
 
             i {
@@ -23,6 +23,9 @@
                 color: #28363d;
                 font-size: 15px;
                 letter-spacing: 0.6px;
+                display: flex;
+                align-items: center;
+                min-height: 50px;
             }
         }
         &:hover > div {

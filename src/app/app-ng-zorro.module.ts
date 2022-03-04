@@ -9,7 +9,8 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzSwitchModule } from 'ng-zorro-antd/switch';
 import { NzCardModule } from 'ng-zorro-antd/card';
-
+import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzMessageModule } from 'ng-zorro-antd/message';
 
 
 @NgModule({
@@ -22,7 +23,9 @@ import { NzCardModule } from 'ng-zorro-antd/card';
     NzSpaceModule,
     NzGridModule,
     NzSwitchModule,
-    NzCardModule
+    NzCardModule,
+    NzDividerModule,
+    NzMessageModule
   ],
 })
 export class NgZorroModule { }

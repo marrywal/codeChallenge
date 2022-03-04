@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgZorroModule } from './app-ng-zorro.module';
 import { ChooseTwoComponent } from './components/choose-two/choose-two.component';
+import { CryptographyComponent } from './components/cryptography/cryptography.component';
+import {ClipboardModule} from '@angular/cdk/clipboard';
 
 
 registerLocaleData(en);
@@ -23,7 +25,8 @@ registerLocaleData(en);
     AppComponent,
     OverviewComponent,
     CountdownComponent,
-    ChooseTwoComponent
+    ChooseTwoComponent,
+    CryptographyComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ registerLocaleData(en);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NgZorroModule
+    NgZorroModule,
+    ClipboardModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
