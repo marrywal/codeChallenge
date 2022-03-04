@@ -11,6 +11,8 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzMessageModule } from 'ng-zorro-antd/message';
+import { NzSliderModule } from 'ng-zorro-antd/slider';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { NzMessageModule } from 'ng-zorro-antd/message';
     NzSwitchModule,
     NzCardModule,
     NzDividerModule,
-    NzMessageModule
+    NzMessageModule,
+    NzSliderModule,
+    NzCheckboxModule
   ],
 })
 export class NgZorroModule { }

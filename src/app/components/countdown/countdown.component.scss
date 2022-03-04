@@ -2,13 +2,11 @@
 .countdownBox {
     border: 1px solid rgb(187, 187, 187);
     background-color: rgb(228, 230, 230);
-    width: clamp(400px, 60vw, 600px);
-    height: auto;
-    margin: 20px auto;
+    margin: 20px 0;
     padding: 20px 30px;
-    box-sizing: border-box;
 
     .box {
+        margin: 20px 0;
         display: flex;
         justify-content: space-between;
     }

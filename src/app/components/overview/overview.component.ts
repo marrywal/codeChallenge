@@ -23,6 +23,16 @@ export class OverviewComponent implements OnInit {
       icon: 'container',
       link: '/crypto'
     },
+    {
+      name: 'Password generator',
+      icon: 'lock',
+      link: '/password'
+    },
+    {
+      name: 'Calculator',
+      icon: 'calculator',
+      link: ''
+    },
   ];
 
   constructor() { }

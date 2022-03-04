@@ -1,4 +1,4 @@
-<div class="cryptobox">
+<div class="containerBox">
     <nz-divider nzText="Encode text"></nz-divider>
 
     <nz-input-group [nzSuffix]="textAreaClearTplo" class="ant-input-affix-wrapper-textarea-with-clear-btn textbox">
@@ -20,7 +20,7 @@
         Copy
     </button>
 
-    <p *ngIf="encodedText">{{encodedText}}</p>
+    <p class="outputField" *ngIf="encodedText">{{encodedText}}</p>
 
     <nz-divider nzText="Decode text"></nz-divider>
 
@@ -43,5 +43,5 @@
         Copy
     </button>
 
-    <p *ngIf="decodedText">{{decodedText}}</p>
+    <p class="outputField" *ngIf="decodedText">{{decodedText}}</p>
 </div>

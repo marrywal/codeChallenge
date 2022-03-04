@@ -16,6 +16,7 @@ import { NgZorroModule } from './app-ng-zorro.module';
 import { ChooseTwoComponent } from './components/choose-two/choose-two.component';
 import { CryptographyComponent } from './components/cryptography/cryptography.component';
 import {ClipboardModule} from '@angular/cdk/clipboard';
+import { PasswordGeneratorComponent } from './components/password-generator/password-generator.component';
 
 
 registerLocaleData(en);
@@ -26,7 +27,8 @@ registerLocaleData(en);
     OverviewComponent,
     CountdownComponent,
     ChooseTwoComponent,
-    CryptographyComponent
+    CryptographyComponent,
+    PasswordGeneratorComponent
   ],
   imports: [
     BrowserModule,

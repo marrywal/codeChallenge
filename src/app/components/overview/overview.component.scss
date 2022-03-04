@@ -3,7 +3,7 @@
     margin: auto;
 
     .gutter-row {
-            margin-top: 15px;
+        margin-top: 15px;
         > div {
             transition-duration: 0.2s;
             background-color: #dee1dd;
@@ -19,13 +19,14 @@
             }
 
             p {
-                margin-top: 4px;
+                margin: 10px 0 5px;
                 color: #28363d;
                 font-size: 15px;
                 letter-spacing: 0.6px;
                 display: flex;
                 align-items: center;
                 min-height: 50px;
+                justify-content: space-around;
             }
         }
         &:hover > div {
@@ -34,6 +35,22 @@
 
             i {
                 color: #658b6f;
+            }
+        }
+
+        &.disabled {
+            > div {
+                cursor: default;
+                background-color: #f1f1f1;
+                border: 1px solid #c4cdc1;
+
+                i {
+                    color: #9e9e9e;
+                }
+
+                p {
+                    color: #9e9e9e;
+                }
             }
         }
     }
