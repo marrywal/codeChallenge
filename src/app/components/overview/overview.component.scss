@@ -4,7 +4,7 @@
 
     .gutter-row {
         margin-top: 15px;
-        > div {
+        div {
             transition-duration: 0.2s;
             background-color: #dee1dd;
             border: 1px solid #c4cdc1;
@@ -29,27 +29,30 @@
                 justify-content: space-around;
             }
         }
-        &:hover > div {
-            background-color: #c4cdc1;
-            border-color: #c4cdc1;
 
-            i {
-                color: #658b6f;
-            }
-        }
-
-        &.disabled {
-            > div {
-                cursor: default;
-                background-color: #f1f1f1;
-                border: 1px solid #c4cdc1;
+        a {
+            &:hover div {
+                background-color: #c4cdc1;
+                border-color: #c4cdc1;
 
                 i {
-                    color: #9e9e9e;
+                    color: #658b6f;
                 }
+            }
 
-                p {
-                    color: #9e9e9e;
+            &.disabled {
+                > div {
+                    cursor: default;
+                    background-color: #f1f1f1;
+                    border: 1px solid #c4cdc1;
+
+                    i {
+                        color: #9e9e9e;
+                    }
+
+                    p {
+                        color: #9e9e9e;
+                    }
                 }
             }
         }

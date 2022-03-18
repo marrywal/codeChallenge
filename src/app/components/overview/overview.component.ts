@@ -60,12 +60,12 @@ export class OverviewComponent implements OnInit {
     },
     {
       name: 'Contact form',
-      icon: 'question',
+      icon: 'form',
       link: ''
     },
     {
       name: 'Drink more water',
-      icon: 'question',
+      icon: 'fire',
       link: ''
     },
   ];
