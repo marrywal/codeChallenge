@@ -4,6 +4,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { ChooseTwoComponent } from './components/choose-two/choose-two.component';
 import { CountdownComponent } from './components/countdown/countdown.component';
 import { CryptographyComponent } from './components/cryptography/cryptography.component';
+import { ImageSliderComponent } from './components/image-slider/image-slider.component';
 import { OverviewComponent } from './components/overview/overview.component';
 import { PasswordGeneratorComponent } from './components/password-generator/password-generator.component';
 
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'crypto', component: CryptographyComponent },
   { path: 'password', component: PasswordGeneratorComponent },
   { path: 'chat', component: ChatComponent },
+  { path: 'image-slider', component: ImageSliderComponent },
   { path: '',   redirectTo: '/overview', pathMatch: 'full' }
 ];
 
