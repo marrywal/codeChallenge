@@ -1,0 +1,11 @@
+.scrollBox {
+    width: 80vw;
+    overflow-x: scroll;
+}
+
+.cardOuther {
+    margin: 0 20px;
+    nz-card {
+        width: 200px;
+    }
+}

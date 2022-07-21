@@ -41,7 +41,7 @@ export class OverviewComponent implements OnInit {
     {
       name: 'Image slider',
       icon: 'picture',
-      link: '/image-slider'
+      link: ''
     },
     {
       name: 'Random color background',
