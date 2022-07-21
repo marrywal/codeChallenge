@@ -13,6 +13,8 @@ import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzMessageModule } from 'ng-zorro-antd/message';
 import { NzSliderModule } from 'ng-zorro-antd/slider';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
+import { NzAvatarModule } from 'ng-zorro-antd/avatar';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
     NzDividerModule,
     NzMessageModule,
     NzSliderModule,
-    NzCheckboxModule
+    NzCheckboxModule,
+    NzAvatarModule,
+    NzLayoutModule
   ],
 })
 export class NgZorroModule { }

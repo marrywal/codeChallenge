@@ -1,0 +1,30 @@
+<div class="cardBox">
+    <nz-card [nzBordered]="false" [nzTitle]="avatarTemplate">
+        <div class="chat">
+            <div class="messages" #scrollMe>
+                <div class="message" [ngClass]="message.isChatbot ? 'bot' : 'person'" *ngFor="let message of messages">
+                    <span class="outher">
+                        <span class="bubble">
+                            {{message.text}}
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="inputBox">
+                <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+                    <input type="text" [(ngModel)]="newMessage" (keyup.enter)="sendMessage()" nz-input
+                        placeholder="Type message here..." id="chatInput"/>
+                </nz-input-group>
+                <ng-template #suffixIconButton>
+                    <button nz-button nzType="primary" [disabled]="!newMessage" (click)="sendMessage()" nzSearch>
+                        <i nz-icon nzType="send"></i>
+                    </button>
+                </ng-template>
+            </div>
+        </div>
+    </nz-card>
+    <ng-template #avatarTemplate>
+        <nz-avatar nzSize="small" nzIcon="user"></nz-avatar>
+        Chat with me!
+    </ng-template>
+</div>

@@ -36,7 +36,7 @@ export class OverviewComponent implements OnInit {
     {
       name: 'Chat',
       icon: 'comment',
-      link: ''
+      link: '/chat'
     },
     {
       name: 'Image slider',
