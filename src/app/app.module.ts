@@ -17,6 +17,7 @@ import { ChooseTwoComponent } from './components/choose-two/choose-two.component
 import { CryptographyComponent } from './components/cryptography/cryptography.component';
 import {ClipboardModule} from '@angular/cdk/clipboard';
 import { PasswordGeneratorComponent } from './components/password-generator/password-generator.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 
 registerLocaleData(en);
@@ -28,7 +29,8 @@ registerLocaleData(en);
     CountdownComponent,
     ChooseTwoComponent,
     CryptographyComponent,
-    PasswordGeneratorComponent
+    PasswordGeneratorComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

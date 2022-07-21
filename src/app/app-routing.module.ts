@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ChatComponent } from './components/chat/chat.component';
 import { ChooseTwoComponent } from './components/choose-two/choose-two.component';
 import { CountdownComponent } from './components/countdown/countdown.component';
 import { CryptographyComponent } from './components/cryptography/cryptography.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'choose-two', component: ChooseTwoComponent },
   { path: 'crypto', component: CryptographyComponent },
   { path: 'password', component: PasswordGeneratorComponent },
+  { path: 'chat', component: ChatComponent },
   { path: '',   redirectTo: '/overview', pathMatch: 'full' }
 ];
 

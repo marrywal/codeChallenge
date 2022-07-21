@@ -39,7 +39,10 @@
               "src/style/styles.scss",
               "src/style/theme.less"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/chatbot/index.js",
+              "src/assets/js/chatbot/constants.js"
+            ]
           },
           "configurations": {
             "production": {
