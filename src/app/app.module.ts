@@ -12,11 +12,13 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgZorroModule } from './app-ng-zorro.module';
 import { ChooseTwoComponent } from './components/choose-two/choose-two.component';
 import { CryptographyComponent } from './components/cryptography/cryptography.component';
 import {ClipboardModule} from '@angular/cdk/clipboard';
 import { PasswordGeneratorComponent } from './components/password-generator/password-generator.component';
+import { ChatComponent } from './components/chat/chat.component';
+import { NgZorroModule } from './ng-zorro-module';
+import { ImageSliderComponent } from './components/image-slider/image-slider.component';
 
 
 registerLocaleData(en);
@@ -28,7 +30,9 @@ registerLocaleData(en);
     CountdownComponent,
     ChooseTwoComponent,
     CryptographyComponent,
-    PasswordGeneratorComponent
+    PasswordGeneratorComponent,
+    ChatComponent,
+    ImageSliderComponent
   ],
   imports: [
     BrowserModule,
@@ -36,8 +40,8 @@ registerLocaleData(en);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NgZorroModule,
-    ClipboardModule
+    ClipboardModule,
+    NgZorroModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

@@ -1,1 +1,16 @@
-<router-outlet></router-outlet>
+<nz-header>
+    <div class="headerBox">
+        <h2 class="headerTitle" *ngIf="router.url === '/overview'">
+            <i nz-icon nzType="code" nzTheme="outline"></i>
+            CodeChallenges
+        </h2>
+    </div>
+    <div *ngIf="router.url !== '/overview'">
+        <button nz-button nzType="default" nzSize="small" nzShape="circle" routerLink="/overview">
+            <i nz-icon nzType="left"></i>
+        </button>
+    </div>
+</nz-header>
+<nz-content>
+    <router-outlet></router-outlet>
+</nz-content>

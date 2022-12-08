@@ -1,5 +1,4 @@
-import { NgModule } from '@angular/core';
-
+import {NgModule} from '@angular/core';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -13,23 +12,26 @@ import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzMessageModule } from 'ng-zorro-antd/message';
 import { NzSliderModule } from 'ng-zorro-antd/slider';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
-
+import { NzAvatarModule } from 'ng-zorro-antd/avatar';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
 
 @NgModule({
-  exports: [
-    NzButtonModule,
-    NzIconModule,
-    NzInputModule,
-    NzInputNumberModule,
-    NzDatePickerModule,
-    NzSpaceModule,
-    NzGridModule,
-    NzSwitchModule,
-    NzCardModule,
-    NzDividerModule,
-    NzMessageModule,
-    NzSliderModule,
-    NzCheckboxModule
-  ],
+    exports: [
+        NzButtonModule,
+        NzIconModule,
+        NzInputModule,
+        NzInputNumberModule,
+        NzDatePickerModule,
+        NzSpaceModule,
+        NzGridModule,
+        NzSwitchModule,
+        NzCardModule,
+        NzDividerModule,
+        NzMessageModule,
+        NzSliderModule,
+        NzCheckboxModule,
+        NzAvatarModule,
+        NzLayoutModule
+    ]
 })
-export class NgZorroModule { }
+export class NgZorroModule {}
